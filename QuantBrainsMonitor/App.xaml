@@ -1,0 +1,12 @@
+﻿<Application x:Class="QuantBrainsMonitor.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:QuantBrainsMonitor"
+             xmlns:converters="clr-namespace:QuantBrainsMonitor.Converters">
+    <Application.Resources>
+        <converters:BoolToTextConverter x:Key="BoolToTextConverter"/>
+        <converters:StatusToColorConverter x:Key="StatusToColorConverter"/>
+        <converters:MomentumToColorConverter x:Key="MomentumToColorConverter"/>
+        <converters:NullableToBoolConverter x:Key="NullableToBoolConverter"/>
+    </Application.Resources>
+</Application>
